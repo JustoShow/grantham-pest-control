@@ -365,15 +365,21 @@ footer hr {
 
     .got-pest-mobile {
         display: inherit;
-        background-image: url("./images/carousel/termite-slide.jpg");
-        background-size: 100%;
         color: var(--white);
-        padding: 50px;
-        
+        padding: 0;
+        position: relative;
     }
 
-    .got-pest-mobile p {
-        font-size: 3.125rem;
+    .got-pest-mobile-text {
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+
+    .got-pest-mobile-text p {
+        font-size: 2.125rem;
         font-weight: bold;
     }
 
