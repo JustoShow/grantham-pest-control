@@ -368,6 +368,7 @@ footer hr {
         color: var(--yellow);
         padding: 0;
         position: relative;
+        width: 100%;
     }
 
     .got-pest-mobile-text {
@@ -381,6 +382,10 @@ footer hr {
     .got-pest-mobile-text p {
         font-size: 2.125rem;
         font-weight: bold;
+    }
+
+    .got-pest-mobile-img {
+        width: 100%;
     }
 
     /* Services - T */
