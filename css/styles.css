@@ -1,0 +1,429 @@
+@import url("utilities.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;900&display=swap');
+
+/* Global */
+:root {
+    --yellow: #f7ca18;
+    --greyText: #47484A;
+    --darkGrey: #222;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    color: var(--greyText);
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, a, li {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    width: 50%;
+    margin: 50px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+p, a {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.section-heading{
+    text-align: center;
+    padding: 25px 0;
+    font-size: 40px;
+}
+
+/* Call To Action (CTA) */
+.cta {
+    background-color: var(--darkGrey);
+    color: var(--white);
+    text-align: right;    
+}
+
+.cta p {
+    font-size: 16px;
+}
+
+/* Navigation */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.brand-banner {
+    width: 80%;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li a {
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    border-bottom: 2px var(--darkGrey) solid;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    color: var(--darkGrey);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Photo Carousel */
+.carousel-container {
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-text p {
+    color: var(--yellow);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.carousel figure {
+    position: relative;
+    width: 300%; /* 100 x Number or Slides*/
+    margin: 0 auto;
+    left: 0;
+    animation: 10s slider infinite;
+}
+
+.carousel figure img {
+    width: 33.3333333%; /* 100% / Number of Slides */
+    float: left;
+}
+
+
+@keyframes slider {
+    0%{
+        left: 0
+    }
+    50% {
+        left: 0;
+    }
+    55%{
+        left: -100%;
+    }
+    90%{
+        left: -100%;
+    }
+    95%{
+        left: -200%;
+    }
+    100%{
+        left: -200%;
+    }
+}
+
+.got-pest-mobile {
+    display: none;
+}
+
+/* About Us */
+.about h2 {
+    margin: 20px 0;
+}
+
+.company-truck {
+    height: 100%;
+}
+
+.company-truck img {
+    width: 50%;
+}
+
+/* Mission */
+
+
+/* Services */
+.service-icons {
+    justify-items: center;
+}
+
+.service-icons img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.services .grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.services ul li::before {
+    content: '✔ ';
+}
+
+.services ul li {
+    align-self: start;
+    margin: 0;
+}
+
+.service-text{
+    margin: 100px 0;
+    background-color: var(--darkGrey);
+    color: var(--yellow);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.8);
+}
+
+.service-notice {
+    margin-top: 50px;
+    color: var(--white);
+}
+
+/* Quote */
+.contact-form {
+    height: 100%;  
+    justify-content: space-evenly;
+}
+
+.contact-form form {
+    align-self: start;
+    width: 40%;
+}
+
+.contact-form div {
+    margin: 40px auto;
+}
+
+.contact-form input {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: var(--darkGrey);
+    color: var(--yellow);
+}
+
+.btn:hover {
+    background-color: var(--greyText);
+}
+
+/* Footer */
+footer {
+    background-color: var(--darkGrey);
+    color: var(--white);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: var(--yellow);
+}
+
+footer h3 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+
+footer div {
+    margin: 8px 0;
+}
+
+footer section {
+    align-self: start;
+    justify-content: space-between;
+}
+
+footer hr {
+    min-width: 100px;
+    margin: 0;
+}
+
+.copyright {
+    margin: 40px 0 20px 0;
+}
+
+/* Mobile Tablets */
+@media only screen and (max-width: 768px){
+
+    /* CTA - T */
+    .cta {
+        text-align: center;
+    }
+
+    /* Navigation */
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li:hover {
+        border: none;
+        background-color: var(--greyText);
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links li a:hover {
+        color: var(--white);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    /* About Us - T */
+    .company-truck img {
+        width: 75%;
+    }
+
+    /* Carousel - T */
+    .service-icons{
+        display: none;
+    }
+
+    .carousel-container{
+        display: none;
+    }
+
+    .got-pest-mobile {
+        display: inherit;
+        background-image: url("/images/carousel/termite-slide.jpg");
+        background-size: 100%;
+        color: var(--white);
+        padding: 50px;
+        
+    }
+
+    .got-pest-mobile p {
+        font-size: 3.125rem;
+        font-weight: bold;
+    }
+
+    /* Services - T */
+    .services .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Quote - T */
+    .contact-form {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-form form {
+        align-self: center;
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* Footer - T */
+    footer .grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer h3 {
+        margin-top: 30px;
+    }
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 425px){
+    /* About Us - T */
+    .company-truck img {
+        width: 100%;
+    }    
+
+    /* Services - M */
+    .services .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Widescreen */
+@media only screen and (min-width: 2000px){
+    .container {
+        max-width: 60%;
+    }
+}

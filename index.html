@@ -1,168 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grantham Pest Control, LLC - Houston, Tx Exterminator</title>
-    <link rel="shortcut icon" href="images/Logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icon Logo -->
+    <link rel="Icon" href="images/logos/Logo.svg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>    
-    <main>
-        <header>
-            <p>Protect your home from Pests and Call Us Today! (832) 439-3925</p>
-            <img src="images/Logo Banner.svg" alt="logo-banner-img">
-            <nav>            
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Mission</a>
-                    <a href="#">Services</a>
-                    <a href="#">Get A Quote</a>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- Photo Carousel -->
-        <section>
-            <img src="images/terminte-slide.jpg" alt="termite-img">           
-        </section>
+<body>
+    <!-- Call To Action -->
+    <div class="cta p-1">
+        <p class="container">Protect your home from Pests and Call Us Today! (832) 439-3925</p>
+    </div>
 
-        <!-- About Us -->
-        <section>
-            <h2>About Us</h2>
-            <img src="images/company-truck-300x225.jpg" alt="company-truck-img">
-            <p>
-                Grantham Pest Control is a licensed local Houston professional pest control company that guarantees to get rid of your insect problems,
-                while our protection services make sure your home or workplace is always protected.
-            </p>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Our Mission</h2>
-            <p>
-                Grantham Pest Control is committed to providing high quality pest control services by combining tried and tested methods with new and innovative products to effectively rid your home or workplace of unsightly and damaging pests. 
-                Our trained and licensed staff provide courteous and prompt service as we assess the infestation and design a solution to suit your needs. 
-                Our products are applied with methods that are environmentally safe to your staff, workplace, home, family and pets. We have been in business for over 17 years and are committed to providing you with rock-solid service and information that will help you maintain a pest free environment. 
-                Are bugs bugging you? Give Grantham Pest Control a call.
-            </p>
-        </section>
-
-        <!-- Services -->
-        <section>
-            <h2>Houston Area Pest Control Services</h2>
-
-            <!-- Hide icons on mobile view -->
-            <div>
-                <img src="images/cockroach-icon.png" alt="cockroach-icon">
-                <img src="images/mosquito-icon.png" alt="mosquito-icon">
-                <img src="images/ant-icon.png" alt="ant-icon">
-                <img src="images/rat-icon.png" alt="rat-icon">
+    <!-- Navbar -->
+    <div class="container sticky">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img class="brand-banner" src="images/logos/Logo Banner.svg" alt="Logo Banner">
             </div>
-
-            <div>
+            <a id="nav_toggle" class="toggle-button" href="#"><i class="fas fa-bars fa-2x"></i></a>
+            <div id="nav_links" class="navbar-links">
                 <ul>
-                    <div>
-                        <li>Termite Inspections</li>
-                        <li>Termite Treatment</li>
-                    </div>
-                    <div>
-                        <li>Roach Control & Baiting</li>
-                        <li>Rodent and Reptile Control & Baiting</li>
-                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <div>
-                        <li>Ant, Spider, Wasp and Bee Treatment</li>
-                        <li>Fogging</li>
-                    </div>
-                    <div>
-                        <li>Education</li>
-                        <li>Home Inspection</li>
-                    </div>
+        </nav>
+    </div>
+
+    <!-- Carousel For Desktop Only-->
+    <div class="container carousel-container">
+        <div id="slider" class="carousel">
+            <figure>
+                <img src="images/carousel/bedbug_slider.jpg" alt="Bed bugs">
+                <img src="images/carousel/termite-slide.jpg" alt="Termites">
+                <img src="images/carousel/bedbug_slider.jpg" alt="Bed bugs">
+            </figure>
+        </div>
+        <div class="carousel-text">
+            <p>Got Pest? <br> We Can Help!</p>
+        </div>
+    </div>
+
+    <!-- Got Pest Banner Replaces Desktop Carousel -->
+    <div class="got-pest-mobile text-center">
+        <p>Got Pest? <br> We Can Help!</p>
+    </div>
+
+    <!-- About Us -->
+    <section id="about_us" class="container about">
+        <div class="my-3">
+            <h2 class="section-heading">About Us</h2>
+            <div class="company-truck text-center">
+                <img src="images/company-truck/company-truck.jpg" alt="Company Truck">
+            </div>
+            <p>Grantham Pest Control is a licensed local Houston professional pest control company that guarantees to
+                get rid of your insect problems,
+                while our protection services make sure your home or workplace is always protected.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Our Mission -->
+    <section id="mission" class="container mission">
+        <div class="my-3">
+            <h2 class="section-heading">Our Mission</h2>
+            <p>Grantham Pest Control is committed to providing high quality pest control services by combining tried and
+                tested methods with new and innovative products to effectively rid your home or workplace of unsightly
+                and damaging pests.
+                Our trained and licensed staff provide courteous and prompt service as we assess the infestation and
+                design a solution to suit your needs.
+                Our products are applied with methods that are environmentally safe to your staff, workplace, home,
+                family and pets. We have been in business for over 17 years and are committed to providing you with
+                rock-solid service and information that will help you maintain a pest free environment.
+                Are bugs bugging you? Give Grantham Pest Control a call.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Services -->
+    <section id="services" class="container services">
+        <div class="my-3">
+            <h2 class="section-heading">Services</h2>
+
+            <!-- Hide Icons On Mobile View -->
+            <div class="service-icons grid grid-4 p-3">
+                <img src="images/bug-icons/cockroach-icon.png" alt="No Cockroach Icon">
+                <img src="images/bug-icons/mosquito-icon.png" alt="No Mosquito Icon">
+                <img src="images/bug-icons/ant-icon.png" alt="No Ant Icon">
+                <img src="images/bug-icons/rat-icon.png" alt="No Rat Icon">
+            </div>
+
+            <div class="services">
+                <ul class="grid">
+                    <li>Roach Control & Baiting</li>
+                    <li>Rodent and Reptile Baiting</li>
+                    <li>Termite Inspections</li>
+                    <li>Termite Treatment</li>
+                    <li>Insect Treatment</li>
+                    <li>Fogging</li>
+                    <li>Education</li>
+                    <li>Home Inspection</li>
                 </ul>
             </div>
 
-            <p>
-                🚨🚨🚨 Now Specializing in Storm & Flood Damage Repair Protecting Structures From Moisture and Fungus 🚨🚨🚨
-            </p>
-            <p>* To Receive a Termite Letter Treatment must be Performed by a Licensed Exterminator.</p>
-        </section>
-        
-        <!-- Quote -->
-        <section>
-            <form action="" method="post">
-                <!-- name -->
+            <div class="service-text text-center p-3">
                 <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name"><br>
+                    <p class="text-center">🚨🚨🚨</p>
+                    <p class="alert">Now Specializing in Storm & Flood Damage Repair Protecting Structures From Moisture and Fungus.</p>
+                    <p class="text-center">🚨🚨🚨</p>
                 </div>
-                <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name"><br>
-                </div>
-                <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name"><br>
-                </div>
-                <button type="submit">Get Quote</button>
-            </form>
+                <p class="service-notice">* To Receive a Termite Letter Treatment must be Performed by a Licensed Exterminator.</p>
+            </div>
+        </div>
+    </section>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.8121075304725!2d-95.33750288458145!3d29.69622668201027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640be3c58fb4689%3A0x4f41798145660f1f!2s5330%20Griggs%20Rd%20A113%2C%20Houston%2C%20TX%2077021!5e0!3m2!1sen!2sus!4v1606179833779!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
-        </section>
+    <hr>
 
-        <footer>
-            <section>
-                <h3>Site Links</h3>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Mission</a>
-                <a href="#">Services</a>
-                <a href="#">Get A Quote</a>
+    <!-- Quote -->
+    <section class="container" id="quote">
+        <div class="my-3">
+            <h2 class="section-heading">Request A Quote!</h2>
+            <div class="contact-form flex p-4">
+                <form class="card" action="mailto:jdallen1990@yahoo.com" method="post">
+                    <h3 class="text-center">Contact Us</h3>
+                    <!-- name -->
+                    <div>
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" id="name" required><br>
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" name="phone" id="phone"><br>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" required><br>
+                    </div>
+                    <button class="btn" type="submit">Get Quote</button>
+                </form>
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.8121075304725!2d-95.33750288458145!3d29.69622668201027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640be3c58fb4689%3A0x4f41798145660f1f!2s5330%20Griggs%20Rd%20A113%2C%20Houston%2C%20TX%2077021!5e0!3m2!1sen!2sus!4v1606179833779!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2">
+        <div class="container grid grid-3">
+            
+            <section class="site-links">   
+                <h3>Site Links</h2>              
+                <ul>
+                	<li>
+                        <a href="#">Home</a>
+                        <hr>
+                    </li>
+                
+                	<li>
+                        <a href="#">About Us</a>
+                        <hr>
+                	</li>
+                	<li>
+                        <a href="#">Mission</a>
+                        <hr>
+                	</li>
+                	<li>
+                        <a href="#">Services</a>
+                        <hr>
+                	</li>
+                	<li>
+                        <a href="#">Get A Quote</a>
+                        <hr>
+                	</li>
+                </ul>
             </section>
 
             <section>
                 <h3>Follow Us</h3>
-                <a href="#"><img src="#" alt="facebook-icon"></a>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                </ul>
             </section>
 
-            <section>
-                <h3></h3>
-                <div>
-                    <h4>Address:</h4><br>
-                    <p>5330 Griggs Rd. Ste A113 Houston, TX 77021-3700</p>
+            <section >
+                <h3>Contact Us</h3>
+                <div class="grid">                    
+                    <div class="contact-info">
+                        <h4>Address:</h4>
+                        <p>5330 Griggs Rd. Ste A113 <br> Houston, TX 77021-3700</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone:</h4>
+                        <p>713-731-0829</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Mobil:</h4>
+                        <p>832-468-9141</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Fax:</h4>
+                        <p>713-731-0829</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email:</h4>
+                        <a href="mailto:dgrantha@yahoo.com">dgrantha@yahoo.com</a><br>
+                        <a href="mailto:mgrantham@yahoo.com">mgrantham@yahoo.com</a>
+                    </div>
                 </div>
+            </section>          
+        </div>
+        <p class="copyright text-center">© 2020 All rights reserved. - Developed By <a href="mailto:justoproductions@yahoo.com">Justin Allen</a></p>
+    </footer>
 
-                <div>
-                    <h4>Phone:</h4><br>
-                    <p>713-731-0829</p>
-                </div>
-
-                <div>
-                    <h4>Mobile:</h4><br>
-                    <p>832-468-9141</p>
-                </div>
-
-                <div>
-                    <h4>Fax:</h4><br>
-                    <p>713-731-0829</p>
-                </div>
-
-                <div>
-                    <h4>Email:</h4><br>
-                    <a href="mailto:dgrantha@yahoo.com">dgrantha@yahoo.com</a>
-                    <a href="mailto:mgrantham@yahoo.com">mgrantham@yahoo.com</a>
-                </div>
-            </section>
-
-            <p>© 2020 All rights reserved. - Developed By <a href="mailto:jdallen1990@yahoo.com">Justin Allen</a></p>
-        </footer>
-    </main>
-
-    <script src="scripts/scripts.js"></script>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
