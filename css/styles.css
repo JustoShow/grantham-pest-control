@@ -365,7 +365,7 @@ footer hr {
 
     .got-pest-mobile {
         display: inherit;
-        background-image: url("./images/carousel/termite-slide.jpg");
+        background-image: url("images/carousel/termite-slide.jpg");
         background-size: 100%;
         color: var(--white);
         padding: 50px;
