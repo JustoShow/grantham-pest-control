@@ -365,7 +365,7 @@ footer hr {
 
     .got-pest-mobile {
         display: inherit;
-        color: var(--white);
+        color: var(--yellow);
         padding: 0;
         position: relative;
     }
